@@ -1,0 +1,112 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+:root{
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 38%, 16%); 
+    --soft-violet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --slightly-transparent-white-p: hsla(0, 0%, 100%, 0.75);
+    --slightly-transparent-white-h: hsla(0, 0%, 100%, 0.6);
+}
+
+body{
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    min-width: 320px;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+h1, h2, h3, h4, h5, h6, p, ul, li, * {
+    margin: 0;
+    padding: 0;
+}
+
+.card-article{
+    margin: 40px;
+    max-width: 1110px;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    
+}
+.card-inner{
+    display: flex;
+    
+}
+.card-dis{
+    padding: 70px 50px 50px 70px;
+
+
+}
+
+.card-img>img{
+    display: block;
+    width: 100%;
+    border-radius: 0 7px 7px 0;
+    opacity: .7;
+
+}
+
+.card-img{
+    width: 100%;
+    filter: brightness(0.40) sepia(1) saturate(1000%) hue-rotate(255deg) opacity(0.80);
+    border-radius: 0 7px 7px 0;
+    position: relative;
+}
+
+.card-title{
+    margin-bottom: 28px;
+    font-size: 2.25rem;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+ 
+.card-title>span{
+    color: hsl(277, 64%, 61%);
+}
+.card-content{
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 75px;
+    padding: 0 70px 0 0;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.statistics{
+    display: flex;
+}
+
+.stat-comp,.stat-temp,.stat-qua{
+    list-style: none;
+    margin-right: 64px;
+}
+
+.stat-title{
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-family: 'Inter', sans-serif;
+}
+
+.stat-text{
+    font-size: 12px;
+    letter-spacing: .9px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.source{
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+}
+.source-link{
+    color: hsl(277, 64%, 61%);
+}
